@@ -173,7 +173,7 @@ const Checkout = () => {
             />
           </div>
           <div className="mt-6">
-            {!checkoutId ? (
+            {/* {!checkoutId ? (
               <button
                 type="submit"
                 className="w-full bg-black text-white py-3 rounded"
@@ -183,14 +183,20 @@ const Checkout = () => {
             ) : (
               <div>
                 <h3 className="text-lg mb-4">Pay with Paypal</h3>
-                {/* Paypal component */}
+
                 <PaypalButton
                   amount={100}
                   onSuccess={handlePaymentSuccess}
                   onError={(err) => alert("Payment failed. Try again.")}
                 />
               </div>
-            )}
+            )} */}
+            <button
+              type="submit"
+              className="w-full bg-black text-white py-3 rounded"
+            >
+              Continue to Payment
+            </button>
           </div>
         </form>
       </div>
